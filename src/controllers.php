@@ -46,6 +46,13 @@ $app->get(
 )->bind('subpage-home');
 
 $app->get(
+    '/tertiary/',
+    function (Request $request) use ($app) {
+        return $app['twig']->render('tertiary.html.twig');
+    }
+)->bind('tertiary-home');
+
+$app->get(
     '/web-directory/',
     function (Request $request) use ($app) {
         return $app['twig']->render('web-directory.html.twig');

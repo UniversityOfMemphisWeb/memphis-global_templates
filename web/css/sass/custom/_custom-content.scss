@@ -995,7 +995,7 @@
       //min-height: 224px;
       padding-bottom: 40px;
       background-color: #232E3A;
-      background-image: url(#{$path-image}/bg-tiger.jpg);
+      background-image: url(#{$path-image}/bg-globe.png);
     }
 
     .cover--title {
@@ -2053,6 +2053,10 @@ $home--programs-width: 380px;
   position: relative;
   margin-bottom: 40px;
 
+  &--box {
+      margin: 12px 0;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -2198,10 +2202,25 @@ $home--programs-width: 380px;
       }
     }
 
+    &--gray {
+        .sidebar--box__title {
+            background-color: $color--graylight;
+            margin-bottom: 24px;
+        }
+
+        .box a {
+            color: $color--graydark;
+        }
+
+        .box a i.fa {
+            width: 17%;
+        }
+    }
+
     &__title {
       @extend .font--bitter;
       padding: 16px 30px;
-      background-color: $color--blue;
+      background-color: $color--bluelight;
       color: #FFFFFF;
       font-size: 18px;
       cursor: default;
@@ -2580,4 +2599,42 @@ $home--programs-width: 380px;
       }
     }
   }
+}
+
+.degree-program-wrap {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 36px;
+    padding-bottom: 18px;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    h3 {
+       color: $color--blue;
+       font-family: $font--bitter;
+       font-size: 24px;
+       font-weight: 400;
+       line-height: 24px;
+margin: 0;
+padding: 0;
+    }
+
+    a {
+       color: $color--graydark;
+       font-weight: 700;
+       text-decoration: underline;
+       text-transform: uppercase;
+
+       &:hover {
+           color: $color--graylight;
+           text-decoration: none;
+       }
+    }
+
+    p {
+        margin: 20px 0;
+        max-width: 90%;
+        padding: 0;
+    }
 }

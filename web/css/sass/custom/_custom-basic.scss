@@ -683,14 +683,17 @@ nav {
     &icon {
       position: relative;
       display: block;
-      padding: 22px 0 15px 70px;
+      padding: 22px 0 15px 76px;
       min-height: 68px;
       width: 100%;
       background-color: #0C345D;
       color: $color--white;
+     font-family: $font--bitter;
+     font-size: 22px;
+     line-height: 24px;
       text-transform: uppercase;
-      letter-spacing: 0.100em;
-      font-weight: 700;
+      letter-spacing: 0.050em;
+      font-weight: 400;
       @include transition(all 0.3s ease);
 
       &:focus, &:hover {

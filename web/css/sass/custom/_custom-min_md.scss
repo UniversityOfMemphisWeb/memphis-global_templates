@@ -320,8 +320,8 @@
 
             > a {
               position: relative;
-              padding: 38px 14px 0;
-              font-size: 19px;
+              padding: 38px 10px 0;
+              font-size: 16px;
               line-height: 1;
               height: 100%;
               border-bottom: 0;
@@ -363,6 +363,21 @@
                 display: none;
               }
             }
+
+            a.nav-button-gray {
+                background-color: $color--bluelight;
+                color: #fff;
+                height: auto;
+                display: inline-block;
+                margin-top: 28%;
+                padding: 6px 12px;
+
+                &:hover, &:focus {
+                    background-color: $color--graylight;
+                    color: #fff;
+                }
+            }
+
 
             > ul {
               position: absolute;

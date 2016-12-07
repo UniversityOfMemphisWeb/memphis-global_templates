@@ -1,0 +1,150 @@
+{% extends 'layout.html.twig' %}
+{% set active = ['type--subpage', 'type--page'] %}
+
+{% block title %}Tertiary - {% endblock %}
+
+{% block cover %}
+
+        <div class="background cover">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="cover--title">
+
+                        <div class="cover--title__wrap">
+
+                            <div class="col-xs-24 col-md-17 col-md-offset-7">
+                                Art History Online
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+{% endblock %}
+
+{% block content %}
+
+        <div class="content">
+
+            <div class="content--top">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-17 col-md-offset-7">
+
+                            <div class="breadcrumb col-xs-hidden col-md-show">
+                                <ul>
+                                    <li><a href="{{ url('homepage') }}">Home</a></li>
+                                    <li>All Online Degrees</li>
+                                </ul>
+                            </div>
+
+                            <div id="nav--list__top" class="col-xs-show col-md-hidden">
+                                <div class="sidebar--box sidebar--box__border">
+                                    <div class="sidebar--box__title">Degree Programs<i class="fa fa-angle-right"></i></div>
+                                    <div class="nav--list">
+                                        <ul>
+                                            <li><a href="#">Menu Level 1</a></li>
+                                            <li><a href="#">Menu Level 1</a></li>
+                                            <li><a href="#">Menu Level 1</a></li>
+                                            <li><a href="#">Menu Level 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="content--body col-xs-24 col-md-17">
+
+                        <div class="content--body__wrapper">
+
+                            <div class="content--body__header">
+                                <img class="lazy" data-original="{{ app.request.basepath }}/img/subpage-header.jpg" alt="Photo of Person Face"/>
+                                <noscript><img src="{{ app.request.basepath }}/img/subpage-header.jpg" alt="Photo of Person Face"/></noscript>
+                            </div>
+                            <h1>Art History Online</h1>
+
+                            <p>Vestibulum sed rhoncus nisl, non aliquam ex. Proin faucibus ligula non vestibulum placerat. Nullam aliquet placerat diam eget dictum. Nunc lacinia, nibh sed dapibus malesuada, nibh ipsum fermentum purus, in vehicula orci orci vitae nunc. Maecenas maximus euismod tempus. Fusce iaculis dolor quis mi tempor lacinia. Integer molestie eros ut dolor imperdiet finibus. In libero quam, dictum non ex ac, volutpat volutpat orci. Nullam maximus consectetur aliquet. Aenean leo libero, pretium et neque a, iaculis accumsan tortor. Phasellus malesuada ante sapien, hendrerit vulputate massa convallis id. Sed vulputate euismod eros non mollis. Maecenas vestibulum, augue tempus dapibus mollis, metus ante lacinia dolor, id finibus mi sem quis massa. Morbi dapibus purus in volutpat malesuada.</p>
+
+                            <p>Vestibulum sed rhoncus nisl, non aliquam ex. Proin faucibus ligula non vestibulum placerat. Nullam aliquet placerat diam eget dictum. Nunc lacinia, nibh sed dapibus malesuada, nibh ipsum fermentum purus, in vehicula orci orci vitae nunc. Maecenas maximus euismod tempus. Fusce iaculis dolor quis mi tempor lacinia. Integer molestie eros ut dolor imperdiet finibus. In libero quam, dictum non ex ac, volutpat volutpat orci. Nullam maximus consectetur aliquet. Aenean leo libero, pretium et neque a, iaculis accumsan tortor. Phasellus malesuada ante sapien, hendrerit vulputate massa convallis id. Sed vulputate euismod eros non mollis. Maecenas vestibulum, augue tempus dapibus mollis, metus ante lacinia dolor, id finibus mi sem quis massa. Morbi dapibus purus in volutpat malesuada.</p>
+
+                            <p>Vestibulum sed rhoncus nisl, non aliquam ex. Proin faucibus ligula non vestibulum placerat. Nullam aliquet placerat diam eget dictum. Nunc lacinia, nibh sed dapibus malesuada, nibh ipsum fermentum purus, in vehicula orci orci vitae nunc. Maecenas maximus euismod tempus. Fusce iaculis dolor quis mi tempor lacinia. Integer molestie eros ut dolor imperdiet finibus. In libero quam, dictum non ex ac, volutpat volutpat orci. Nullam maximus consectetur aliquet. Aenean leo libero, pretium et neque a, iaculis accumsan tortor. Phasellus malesuada ante sapien, hendrerit vulputate massa convallis id. Sed vulputate euismod eros non mollis. Maecenas vestibulum, augue tempus dapibus mollis, metus ante lacinia dolor, id finibus mi sem quis massa. Morbi dapibus purus in volutpat malesuada.</p>
+
+                            <div class="row">
+                                <div class="content--box col-xs-24 col-md-8">
+                                    <a class="button--icon" href="#"><i class="icon-users"></i>Contact Us</a>
+                                </div>
+                                <div class="content--box col-xs-24 col-md-8">
+                                    <a class="button--icon" href="#"><i class="icon-article-3"></i>Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content--sidebar col-xs-24 col-md-6">
+
+                        <div class="content--sidebar__wrap">
+
+                            <div class="sidebar--box sidebar--box__border col-xs-hidden col-md-show">
+                                <div class="sidebar--box__title">Degree Programs</div>
+                                <div class="nav--list">
+                                    <ul>
+                                        <li><a href="#">All Online Degrees</a></li>
+                                        <li><a href="#">Undergraduate Online Degrees</a></li>
+                                        <li><a href="#">Graduate Online Degrees</a></li>
+                                        <li><a href="#">Online Certificate Program</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sidebar--box sidebar--box--gray sidebar--box__border">
+                                <div class="sidebar--box__title">Need Help?</div>
+                                <div class="boxes row">
+                                    <div class="box col-xs-20 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-20 col-md-offset-2">
+                                        <div class="box">
+                                            <a class="box--link" href="#"><i class="fa fa-lg fa-phone" aria-hidden="true"></i> Call 800-669-2678</a>
+                                        </div>
+                                    </div>
+                                    <div class="box col-xs-20 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-20 col-md-offset-2">
+                                        <div class="box">
+                                            <a class="box--link" href="#"><i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> Email Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+{% endblock %}

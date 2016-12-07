@@ -128,7 +128,43 @@ header {
     }
 
     .header--box__text {
-      background-color: rgba(19, 56, 93, 0.80);
+      background-color: rgba(66, 66, 66, 0.85);
+      left: 32px;
+            padding-right: 96px;
+      position: absolute; 
+
+
+      span {
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.5em;
+          text-transform: uppercase;
+      }
+
+    }
+
+    .header--box__text:before {
+        border-bottom: 46px solid rgba(66, 66, 66, 0.85);
+        border-left: 20px solid transparent;
+        height: 0;
+        content: '';
+        -moz-transform: scale(.9999);
+      background-color: transparent; // rgba(66, 66, 66, 0.85);
+      padding: 0 0 0 20px;
+position: absolute;
+left: -40px;
+    }
+
+    .header--box__text:after {
+        border-top: 46px solid rgba(66, 66, 66, 0.85);
+        border-right: 20px solid transparent;
+        height: 0;
+        content: '';
+        -moz-transform: scale(.9999);
+      background-color: transparent; // rgba(66, 66, 66, 0.85);
+      padding: 0 20px 0 0;
+position: absolute;
+right: -40px;
     }
 
     .header--box__arrow {
