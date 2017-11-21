@@ -508,6 +508,18 @@ $(document).ready(function() {
             $footer_lists.removeClass('col-xs-'+hidden);
         }
     });
+
+    /*
+    $( ".select > input[type='checkbox']" ).click(function(event){
+
+        var checked = $( ".select > input[type='checkbox']" ).prop( "checked" );
+        console.log( checked );
+
+        if(checked) {
+            event.stopPropagation();
+        }
+    });
+    */
 });
 
 $(window).load(function() {
@@ -515,4 +527,10 @@ $(window).load(function() {
         skip_invisible : false,
         threshold : 200
     });
+});
+
+$(window).unload( function () {
+    console.log('leaving page');
+
+    $( ".select > input[type='checkbox']" ).prop( "checked", false );
 });

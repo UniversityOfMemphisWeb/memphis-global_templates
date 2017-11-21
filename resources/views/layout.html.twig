@@ -14,6 +14,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="{{ app.request.basepath }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/css/styled-select.css" />
 
     <script src="{{ app.request.basepath }}/js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="{{ app.request.basepath }}/js/plugins.header.js"></script>
@@ -103,10 +104,12 @@
                                                 <li><a href="#" title="Contact">Contact</a></li>
                                             </ul>
                                         </nav>
-                                        <form class="header--search">
+                                        <form role="search" class="header--search" action="#" method="post">
                                             <label class="visuallyhidden" for="search">Search</label>
-                                            <input type="search" name="search" id="search" placeholder="Search" />
-                                            <a href="#">Site Index</a>
+                                            <input type="search" name="search" id="search" class="form-control-sm" placeholder="Search">
+                                            <input type="hidden" name="type" id="Site" value="pages">
+                                            <button type="submit"><span class="fa fa-search"></span></button>
+                                            <a href="/web-directory/list.php">Site Index</a>
                                         </form>
                                         <div class="header--top__expand"></div>
                                     </div>
@@ -198,7 +201,7 @@
                         <div id="footer--lists" class="footer--lists col-xs-hidden col-md-show">
                             <div class="row">
                                 <div class="footer--list col-xs-20 col-xs-offset-2 col-sm-11 col-sm-offset-1 col-md-11 col-md-offset-0">
-                                    <h4>About U of M Global</h4>
+                                    <div class="h4">About U of M Global</div>
                                     <nav>
                                         <ul>
                                             <li><a href="#">Affordable, Accessible, Accelerated </a></li>
@@ -210,7 +213,7 @@
                                     </nav>
                                 </div>
                                 <div class="footer--list col-xs-20 col-xs-offset-2 col-sm-11 col-sm-offset-1 col-md-11 col-md-offset-1">
-                                    <h4>Online Degrees</h4>
+                                    <div class="h4">Online Degrees</div>
                                     <nav>
                                         <ul>
                                             <li><a href="#">UofM Global Degree Programs </a></li>
@@ -224,7 +227,7 @@
                             </div>
                             <div class="row">
                                 <div class="footer--list col-xs-20 col-xs-offset-2 col-sm-11 col-sm-offset-1 col-md-11 col-md-offset-0">
-                                    <h4>Online Admissions</h4>
+                                    <div class="h4">Online Admissions</div>
                                     <nav>
                                         <ul>
                                             <li><a href="#">Online Admissions Process </a></li>
@@ -234,14 +237,14 @@
                                         </ul>
                                     </nav>
                                     <nav class="topmargin">
-                                        <a href="#"><h4 class="noborder">Contact Us</h4></a>
-                                        <a href="#"><h4 class="noborder">FAQs</h4></a>
-                                        <a href="#"><h4 class="noborder">Tuition</h4></a>
-                                        <a href="#"><h4 class="noborder">Financial Aid</h4></a>
+                                        <a href="#"><div class="h4 noborder">Contact Us</div></a>
+                                        <a href="#"><div class="h4 noborder">FAQs</div></a>
+                                        <a href="#"><div class="h4 noborder">Tuition</div></a>
+                                        <a href="#"><div class="h4 noborder">Financial Aid</div></a>
                                     </nav>
                                 </div>
                                 <div class="footer--list col-xs-20 col-xs-offset-2 col-sm-11 col-sm-offset-1 col-md-11 col-md-offset-1">
-                                    <h4>Current Students</h4>
+                                    <div class="h4">Current Students</div>
                                     <nav>
                                         <ul>
                                             <li><a href="#">UofM Global Student Services and Support</a></li>
@@ -324,7 +327,7 @@
 
         <i class="icon-envelope-letter"></i>
 
-        <h4>Thank you for signing up for email.</h4>
+        <div class="h4">Thank you for signing up for email.</div>
 
         <p>Information about email signup goes here. Information about email signup goes here. Information about email signup goes here. Information about email signup goes.</p>
 
